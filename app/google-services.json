@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "438642309951",
+    "project_id": "loginhelpinghands",
+    "storage_bucket": "loginhelpinghands.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438642309951:android:60b47eeeee0fdd29e4718a",
+        "android_client_info": {
+          "package_name": "com.example.unityserve"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3jXFoCpiMJ2rqUu4EX7-qvKw4kS1VAp8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Opportunities"
+        android:icon="@drawable/volunteer"
+        android:id="@+id/opportunitybtn"/>
+    <item android:title="Organization"
+        android:icon="@drawable/organization"
+        android:id="@+id/organizationbtn"/>
+    <item android:title="Profile"
+        android:icon="@drawable/person"
+        android:id="@+id/profilebtn"/>
+</menu>

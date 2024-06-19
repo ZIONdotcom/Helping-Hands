@@ -19,6 +19,8 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.unityserve.databinding.ActivityHomeUserBinding;
 import com.example.unityserve.databinding.ActivityMainBinding;
@@ -27,13 +29,17 @@ import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class HomeUser extends AppCompatActivity {
+import java.util.ArrayList;
+
+public class HomeUser extends AppCompatActivity  {
 
     private ActivityHomeUserBinding binding;
     FirebaseAuth auth;
     FirebaseUser user;
 
     String useremail;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,43 +48,35 @@ public class HomeUser extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(binding.getRoot());
 
-        replaceFragment(new OpportunityFragment());
+        replaceFragment2(new OpportunityFragment());
 
-     binding.bottomNavigationView2.setOnItemSelectedListener(menuItem -> {
-         int id = menuItem.getItemId();
-         removeFragment();
-         if (id == R.id.opportunitybtn) {
-             replaceFragment(new OpportunityFragment());
+         binding.bottomNavigationView2.setOnItemSelectedListener(menuItem -> {
+             int id = menuItem.getItemId();
+             removeFragment();
+             if (id == R.id.opportunitybtn) {
+                 replaceFragment2(new OpportunityFragment());
+             }
+            else if(id == R.id.organizationbtn){
+                 replaceFragment2(new organizationFragment());
+             }
+             else if(id == R.id.profilebtn){
+                 replaceFragment2(new profileFragment());
+             }
+             return true;
+         });
+
+         auth = FirebaseAuth.getInstance();
+         user = auth.getCurrentUser();
+
+         if(user == null){
+             Intent intent = new Intent(getApplicationContext(), login.class);
+             startActivity(intent);
+             finish();
          }
-        else if(id == R.id.organizationbtn){
-             replaceFragment2(new organizationFragment());
+         else{
+             useremail = user.getEmail();
+             Toast.makeText(HomeUser.this, "User: " + useremail, Toast.LENGTH_SHORT).show();
          }
-         else if(id == R.id.profilebtn){
-             replaceFragment2(new profileFragment());
-         }
-
-         return true;
-     });
-
-     binding.settings.setOnClickListener(new View.OnClickListener() {
-         @Override
-         public void onClick(View v) {
-             replaceFragment2(new settings());
-         }
-     });
-
-     auth = FirebaseAuth.getInstance();
-     user = auth.getCurrentUser();
-
-     if(user == null){
-         Intent intent = new Intent(getApplicationContext(), login.class);
-         startActivity(intent);
-         finish();
-     }
-     else{
-         useremail = user.getEmail();
-         Toast.makeText(HomeUser.this, "User: " + useremail, Toast.LENGTH_SHORT).show();
-     }
 
     }
 
@@ -99,7 +97,6 @@ public class HomeUser extends AppCompatActivity {
         }else{
 
         }
-
     }
 
     private void replaceFragment2(Fragment fragment){
@@ -108,6 +105,12 @@ public class HomeUser extends AppCompatActivity {
         fragmentTransaction.replace(R.id.framelayout2,fragment);
         fragmentTransaction.commit();
     }
+
+    //we get all the data from string.xml and add it to our opportunityModel class/arraylist
+
+
+
+
 
 
 }

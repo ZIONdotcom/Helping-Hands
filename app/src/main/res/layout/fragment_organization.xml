@@ -30,15 +30,6 @@
                 android:textColor="@color/black"
                 android:textSize="25dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toLeftOf="@+id/viewmore1"
-                android:text="See more"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
-
             <ImageButton
                 android:id="@+id/viewmore1"
                 android:layout_width="30dp"
@@ -51,6 +42,15 @@
                 android:src="@drawable/viewmore"
                 app:tint="#6488f0" />
         </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/Orgspinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="25dp"
+            android:entries="@array/SpinnerValues" />
 
         <ScrollView
             android:id="@+id/scrollView2"

@@ -29,6 +29,7 @@ public class Signup2 extends AppCompatActivity {
     Button calllogin2;
     EditText email, password;
     Button signupbtn;
+    Button signuporg;
 
     FirebaseAuth mAuth;
 
@@ -64,6 +65,16 @@ public class Signup2 extends AppCompatActivity {
             }
         });
 
+         signuporg = findViewById(R.id.signupOrg);
+
+         signuporg.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent = new Intent(Signup2.this, signupOrganization.class);
+                 startActivity(intent);
+             }
+         });
+
         email = findViewById(R.id.emailtxt);
         password = findViewById(R.id.passwordtxtt);
         signupbtn = findViewById(R.id.signupbtnn);
@@ -94,7 +105,7 @@ public class Signup2 extends AppCompatActivity {
                                     Toast.makeText(Signup2.this, "Sign up Successful",
                                             Toast.LENGTH_SHORT).show();
 
-                                    Intent intent = new Intent(Signup2.this,HomeUser.class );
+                                    Intent intent = new Intent(Signup2.this,login.class );
                                     startActivity(intent);
                                     finish();
 

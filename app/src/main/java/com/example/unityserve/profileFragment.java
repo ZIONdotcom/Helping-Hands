@@ -73,7 +73,7 @@ public class profileFragment extends Fragment {
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
 
-        email = v.findViewById(R.id.emaildisplay);
+        email = v.findViewById(R.id.email);
 
         email.setText(user.getEmail());
 

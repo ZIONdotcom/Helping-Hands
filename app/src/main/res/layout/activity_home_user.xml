@@ -19,80 +19,6 @@
         android:layout_height="match_parent">
 
 
-        <RelativeLayout
-            android:id="@+id/toplayout"
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:background="#D4DCFE"
-            app:layout_constraintBottom_toTopOf="@+id/framelayout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageButton
-                android:id="@+id/search"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="60dp"
-                android:layout_marginRight="10dp"
-                android:layout_toLeftOf="@+id/bell"
-                android:background="#D4DCFE"
-                android:scaleType="fitCenter"
-                android:src="@drawable/search"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:tint="#6488f0" />
-
-            <ImageButton
-                android:id="@+id/bell"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="60dp"
-                android:layout_marginRight="10dp"
-                android:layout_toLeftOf="@+id/settings"
-
-                android:background="#D4DCFE"
-                android:scaleType="fitCenter"
-                android:src="@drawable/notification"
-                app:tint="#6488f0" />
-
-            <ImageButton
-                android:id="@+id/settings"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="60dp"
-                android:layout_marginRight="15dp"
-                android:background="#D4DCFE"
-                android:scaleType="fitCenter"
-                android:src="@drawable/setting"
-                app:tint="#6488f0" />
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="50dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="45dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/logo2" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="60dp"
-                android:layout_toRightOf="@+id/logo"
-                android:fontFamily="@font/inter_semibold"
-                android:text="Helping Hands"
-                android:textColor="#6488f0"
-                android:textSize="20dp" />
-
-
-        </RelativeLayout>
-
         <FrameLayout
             android:id="@+id/framelayout"
             android:layout_width="0dp"
@@ -101,9 +27,7 @@
             app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toplayout"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintStart_toStartOf="parent">
 
         </FrameLayout>
 

@@ -19,69 +19,201 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="210dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:shapeAppearanceOverlay="@style/corner"
+                    app:strokeColor="#D4DCFE"
+                    app:strokeWidth="5dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="30dp"/>
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marjim Almo"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MarjimAlmo@gmail.com"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D4DCFE"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="16dp"
+                android:layout_margin="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
                     <LinearLayout
-                        android:id="@+id/linearLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="160dp"
-                        android:background="#D4DCFE"
-                        android:orientation="horizontal"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0">
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="5dp"
+                            android:text="About:"
+                            android:textSize="16dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:maxHeight="60dp"
+                            android:text="assages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+                            android:textSize="12dp"
+                            android:textStyle="normal" />
                     </LinearLayout>
 
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:padding="5dp"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/profile"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-                        app:layout_constraintHorizontal_bias="0.498"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:shapeAppearanceOverlay="@style/corner"
-                        app:strokeColor="@color/white"
-                        app:strokeWidth="5dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="10dp"
+                            android:text="Location:"
+                            android:textSize="16dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:text="Location: Pampanga"
+                            android:maxHeight="60dp"
+                            android:textSize="12dp"
+                            android:textStyle="normal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="10dp"
+                            android:text="Skillset:"
+                            android:textSize="16dp"
+                            android:textStyle="bold"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/f"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:background="#E1E1E1"
+                                android:maxHeight="60dp"
+                                android:text="Animal Wellfare"
+                                android:textSize="10dp"
+                                android:padding="5dp"
+                                android:textStyle="normal" />
+                            <TextView
+                                android:id="@+id/s"
+                                android:layout_toRightOf="@+id/f"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:background="#E1E1E1"
+                                android:maxHeight="60dp"
+                                android:text="Graphic Designs"
+                                android:textSize="10dp"
+                                android:padding="5dp"
+                                android:textStyle="normal" />
+                            <TextView
+                                android:id="@+id/t"
+                                android:layout_toRightOf="@+id/s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:background="#E1E1E1"
+                                android:maxHeight="60dp"
+                                android:text="Education"
+                                android:textSize="10dp"
+                                android:padding="5dp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/fo"
+                                android:layout_toRightOf="@+id/t"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:background="#E1E1E1"
+                                android:maxHeight="60dp"
+                                android:text="Disaster"
+                                android:textSize="10dp"
+                                android:padding="5dp"
+                                android:textStyle="normal" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
 
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Marjim Almo"
-                android:textSize="20dp"
-                android:layout_margin="10dp"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                />
-
-            <TextView
-                android:id="@+id/emaildisplay"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="#CFCFCF"
-                android:text="mrjimalmo@gmail.com"
-                android:textColor="@color/black"
-                android:textStyle="normal"
-                android:padding="10dp"
-                android:textSize="10dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="10dp"
+                android:background="@android:color/darker_gray"
+                android:backgroundTint="@color/material_dynamic_neutral10" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -93,126 +225,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginVertical="10dp"
-                    android:text="About"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="assages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
-                    android:maxHeight="60dp"
-                    android:textSize="15dp"
-                    android:textStyle="normal"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    android:text="Info"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="Age: 22 \nLocation: Pampanga"
-                    android:maxHeight="60dp"
-                    android:textSize="15dp"
-                    android:textStyle="normal"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    android:text="Skillset"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/f"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="5dp"
-                        android:background="#E1E1E1"
-                        android:maxHeight="60dp"
-                        android:text="Animal Wellfare"
-                        android:textSize="10dp"
-                        android:padding="5dp"
-                        android:textStyle="normal" />
-                    <TextView
-                        android:id="@+id/s"
-                        android:layout_toRightOf="@+id/f"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="5dp"
-                        android:background="#E1E1E1"
-                        android:maxHeight="60dp"
-                        android:text="Graphic Designs"
-                        android:textSize="10dp"
-                        android:padding="5dp"
-                        android:textStyle="normal" />
-                    <TextView
-                        android:id="@+id/t"
-                        android:layout_toRightOf="@+id/s"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="5dp"
-                        android:background="#E1E1E1"
-                        android:maxHeight="60dp"
-                        android:text="Education"
-                        android:textSize="10dp"
-                        android:padding="5dp"
-                        android:textStyle="normal" />
-
-                    <TextView
-                        android:id="@+id/fo"
-                        android:layout_toRightOf="@+id/t"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="5dp"
-                        android:background="#E1E1E1"
-                        android:maxHeight="60dp"
-                        android:text="Disaster"
-                        android:textSize="10dp"
-                        android:padding="5dp"
-                        android:textStyle="normal" />
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    android:text="Compleated"
-                    android:textSize="20dp"
+                    android:text="Volunteer History"
+                    android:textSize="16dp"
                     android:textStyle="bold"/>
 
                 <RelativeLayout
@@ -225,9 +239,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
-                        android:text="Name"
+                        android:text="Organization"
                         android:maxHeight="60dp"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal"/>
 
                     <TextView
@@ -235,9 +249,9 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="50dp"
-                        android:text="Ratings"
+                        android:text="Date"
                         android:maxHeight="60dp"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal"/>
                 </RelativeLayout>
 
@@ -255,20 +269,22 @@
                         android:layout_width="160dp"
                         android:layout_height="wrap_content"
                         android:maxHeight="55dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/image"
                         android:layout_centerVertical="true"
                         android:text=" printer took a galley of type and scrambled it to make a type specimen book."
                         android:textSize="10dp"/>
 
-                    <ImageView
+                    <TextView
                         android:layout_width="90dp"
-                        android:layout_height="60dp"
+                        android:layout_height="match_parent"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="20dp"
-                        android:scaleType="fitXY"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/rating"/>
+                        android:text="10/10/2022"
+                        android:textSize="10dp"
+                       android:layout_centerVertical="true"
+                      android:textAlignment="center"
+                   />
 
                 </RelativeLayout>
 
@@ -286,20 +302,22 @@
                         android:layout_width="160dp"
                         android:layout_height="wrap_content"
                         android:maxHeight="55dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/image1"
                         android:layout_centerVertical="true"
                         android:text=" printer took a galley of type and scrambled it to make a type specimen book."
                         android:textSize="10dp"/>
 
-                    <ImageView
+                    <TextView
                         android:layout_width="90dp"
-                        android:layout_height="60dp"
+                        android:layout_height="match_parent"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="20dp"
-                        android:scaleType="fitXY"
+                        android:text="10/10/2022"
+                        android:textSize="10dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/rating"/>
+                        android:textAlignment="center"
+                        />
 
                 </RelativeLayout>
 
@@ -317,20 +335,22 @@
                         android:layout_width="160dp"
                         android:layout_height="wrap_content"
                         android:maxHeight="55dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@+id/image2"
                         android:layout_centerVertical="true"
                         android:text=" printer took a galley of type and scrambled it to make a type specimen book."
                         android:textSize="10dp"/>
 
-                    <ImageView
+                    <TextView
                         android:layout_width="90dp"
-                        android:layout_height="60dp"
+                        android:layout_height="match_parent"
                         android:layout_alignParentRight="true"
                         android:layout_marginRight="20dp"
-                        android:scaleType="fitXY"
+                        android:text="10/10/2022"
+                        android:textSize="10dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/rating"/>
+                        android:textAlignment="center"
+                        />
 
                 </RelativeLayout>
             </LinearLayout>

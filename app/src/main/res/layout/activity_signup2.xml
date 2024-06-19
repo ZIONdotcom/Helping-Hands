@@ -31,6 +31,25 @@
             android:textColor="@color/black"
             android:layout_margin="20dp"/>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/darker_gray"
+            android:backgroundTint="@color/material_dynamic_neutral10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/inter"
+            android:text="Sign up as a volunteer"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            />
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,6 +100,18 @@
             android:fontFamily="@font/inter_semibold"
             android:text="Sign up"
             android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/signupOrg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Sign up as an organization"
+            android:textAlignment="center"
+            android:textColor="#6488f0"
+
+            />
+
         <Button
             android:id="@+id/loginb2"
             android:layout_width="match_parent"

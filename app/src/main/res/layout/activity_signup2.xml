@@ -13,11 +13,13 @@
         android:id="@+id/topview"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        app:srcCompat="@drawable/backgroundtop" />
+        app:srcCompat="@drawable/backgroundtop"
+        android:scaleType="fitXY"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
+        android:layout_marginHorizontal="20dp"
         android:orientation="vertical">
 
         <TextView
@@ -42,7 +44,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
+            android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/inter"
             android:text="Sign up as a volunteer"
@@ -53,7 +55,6 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
             android:id="@+id/Email"
             android:hint="Email"
             android:textColorHint="#99121112"
@@ -62,10 +63,12 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
-               android:id="@+id/emailtxt"
+                android:id="@+id/emailtxt"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"/>
+                android:textColor="#000000" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,7 +76,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_margin="5dp"
             android:hint="Password"
             android:textColorHint="#99121112"
             app:boxStrokeColor="#5B7CD9"
@@ -82,14 +85,38 @@
             app:passwordToggleTint="#89191818">
 
             <com.google.android.material.textfield.TextInputEditText
-               android:id="@+id/passwordtxtt"
+                android:id="@+id/passwordtxtt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
                 android:inputType="textPassword"
-                android:textColor="#000000"/>
+                android:textColor="#000000" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Password"
+            android:textColorHint="#99121112"
+            app:boxStrokeColor="#5B7CD9"
+            app:hintTextColor="@color/material_dynamic_neutral10"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#89191818">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmPasswordtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+                android:inputType="textPassword"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
         <Button
             android:id="@+id/signupbtnn"
             android:layout_width="match_parent"

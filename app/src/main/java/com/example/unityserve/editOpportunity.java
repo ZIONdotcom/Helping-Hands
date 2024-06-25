@@ -166,8 +166,6 @@ public class editOpportunity extends AppCompatActivity {
             }
         });
 
-
-
     }
     private void setSpinnerSelectionByText(Spinner spinner, String text) {
         for (int i = 0; i < spinner.getCount(); i++) {

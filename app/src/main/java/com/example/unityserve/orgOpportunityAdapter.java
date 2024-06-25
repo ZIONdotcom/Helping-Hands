@@ -44,14 +44,9 @@ public class orgOpportunityAdapter extends RecyclerView.Adapter<orgOpportunityAd
         holder.registrationDue.setText( arraylist.get(position).getDuedatetxt());
         holder.dateOpportunity.setText( arraylist.get(position).getDatetext());
 
-/* Glide.with(context)
-                .load(arraylist.get(position).getImageUrl())  // Make sure this URL is correct
-                .into(holder.orgImage);
-*/
-
 
         Glide.with(context)
-                .load(arraylist.get(position).getImageUrl())  // Make sure this URL is correct
+                .load(arraylist.get(position).getImageUrl())
                 .into(holder.opportunityImage);
 
 

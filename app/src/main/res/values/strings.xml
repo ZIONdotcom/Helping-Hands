@@ -2,9 +2,9 @@
     <string name="app_name">unityserve</string>
 
     <string-array name="opportunityTitle">
-        <item>opportunityTitle 1</item>
-        <item>opportunityTitle 2</item>
-        <item>opportunityTitle 3</item>
+        <item>Community Garden Volunteer</item>
+        <item>Senior Companion Program</item>
+        <item>Youth Mentorship Initiative</item>
     </string-array>
 
     <string-array name="OpportunityDateTime">
@@ -14,33 +14,33 @@
     </string-array>
 
     <string-array name="OpportunityLocation">
-        <item>OpportunityLocation 1 </item>
-        <item>OpportunityLocation 2</item>
-        <item>OpportunityLocation 3</item>
+        <item>Manila, PH </item>
+        <item>Bulacan PH</item>
+        <item>Pangasinan, PH</item>
     </string-array>
 
     <string-array name="OpportunityDescription">
-        <item>OpportunityDescription 1</item>
+        <item>Are you passionate about sustainability and love working outdoors? Join our Community Garden Volunteer team! Help us cultivate a thriving garden that provides fresh produce to local food banks and community members in need. Responsibilities include planting, weeding, watering, and harvesting vegetables, as well as assisting with garden maintenance and educational workshops. No prior gardening experience is necessary – just a willingness to learn and a positive attitude. Join us in making a difference in our community, one plant at a time!</item>
         <item>OpportunityDescription 2</item>
         <item>OpportunityDescription 3</item>
     </string-array>
 
     <string-array name="contact">
-        <item>contact 1</item>
-        <item>contact 2</item>
-        <item>contact 3</item>
+        <item>test@gmail.com</item>
+        <item>test@gmail.com</item>
+        <item>test@gmail.com</item>
     </string-array>
 
     <string-array name="deadline">
-        <item>deadline 1</item>
-        <item>deadline 2</item>
-        <item>deadline 3</item>
+        <item>10/20/2024</item>
+        <item>11/24/2024</item>
+        <item>10/29/2024</item>
     </string-array>
 
     <string-array name="orgName">
-        <item>orgname 1</item>
-        <item>orgname 2</item>
-        <item>orgname 3</item>
+        <item>Community Garden Volunteer</item>
+        <item>Senior Companion Program</item>
+        <item>Youth Mentorship Initiative</item>
     </string-array>
 
     <string-array name="category">
